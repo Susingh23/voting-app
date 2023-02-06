@@ -1,7 +1,6 @@
 var express = require('express'),
     async = require('async'),
     pg = require('pg'),
-    { Pool } = require('pg'),
     path = require('path'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
