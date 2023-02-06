@@ -1,4 +1,4 @@
-FROM node:8-slim
+FROM node:10-slim
 
 # add curl for healthcheck
 RUN apt-get update \
@@ -24,8 +24,8 @@ RUN npm ci \
 
 COPY . .
 
-ENV PORT 8080
+ENV PORT 80
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["/tini", "--", "node", "server.js"]
